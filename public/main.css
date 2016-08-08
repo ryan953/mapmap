@@ -5,32 +5,40 @@ body {
   padding: 0;
 }
 
-[class$='left'] {
-  float: left;
-}
-
-[class$='right'] {
-  float: right;
-}
-
-[class$='left'],
-[class$='right'] {
+.container__left,
+.container__right {
   height: 100%;
+  position: relative;
   width: 50%;
 }
 
-.search__container {
-  position: absolute;
+.container__left {
+  float: left;
 }
 
-.search__left,
-.search__right {
+.container__right {
+  float: right;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .container__left,
+  .container__right {
+    float: none;
+    height: 50%;
+    width: 100%;
+  }
+}
+
+.location__container,
+.location__container {
   box-sizing: border-box;
   padding: 2px;
+  position: absolute;
+  width: 100%;
 }
 
-.search__left input,
-.search__right input {
+.location__container input,
+.location__container input {
   border: none;
   box-sizing: border-box;
   font-size: 18px;
@@ -43,5 +51,10 @@ body {
   box-sizing: border-box;
   height: 100%;
   padding-top: 40px;
+  width: 100%;
+}
+
+.map {
+  height: 100%;
   width: 100%;
 }
