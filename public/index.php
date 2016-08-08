@@ -39,6 +39,7 @@ function getURLFromConfig($config) {
       <div id="mapLeft" class="map__left"></div>
       <div id="mapRight" class="map__right"></div>
     </div>
+    <script src="/utils.js"></script>
     <script src="/startup.js"></script>
     <script src="<?= getURLFromConfig($config['google_maps']) ?>" async defer></script>
   </body>
