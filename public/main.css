@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+[class$='left'] {
+  float: left;
+}
+
+[class$='right'] {
+  float: right;
+}
+
+[class$='left'],
+[class$='right'] {
+  height: 100%;
+  width: 50%;
+}
+
+.search__container {
+  position: absolute;
+}
+
+.search__left,
+.search__right {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.search__left input,
+.search__right input {
+  border: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 6px 4px;
+  width: 100%;
+}
+
+.map__container {
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 40px;
+  width: 100%;
+}
