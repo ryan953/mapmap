@@ -5,7 +5,7 @@ $config = array(
     'query_args' => array(
       'v' => '3.24',
       'key' => 'AIzaSyB70zXqgMf5Ko3bRci8USuDoU5D_nkgQYc',
-      'callback' => 'initMap',
+      'callback' => 'init',
     ),
   ),
 );
@@ -26,12 +26,12 @@ function getURLFromConfig($config) {
     <div class="serach__container">
       <div class="search__left">
         <form id="locationLeft">
-          <input id="inputLeft" type="text" />
+          <input name="location" type="text" />
         </form>
       </div>
       <div class="search__right">
         <form id="locationRight">
-          <input id="inputRight" type="text" />
+          <input name="location" type="text" />
         </form>
       </div>
     </div>
@@ -40,6 +40,7 @@ function getURLFromConfig($config) {
       <div id="mapRight" class="map__right"></div>
     </div>
     <script src="/utils.js"></script>
+    <script src="/app.js"></script>
     <script src="/startup.js"></script>
     <script src="<?= getURLFromConfig($config['google_maps']) ?>" async defer></script>
   </body>
