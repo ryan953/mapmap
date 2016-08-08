@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>MapMap! - Compare two locations at the same zoom level</title>
     <link rel="stylesheet" href="/main.css">
   </head>
   <body>
